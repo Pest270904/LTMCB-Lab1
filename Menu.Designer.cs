@@ -44,7 +44,7 @@
             this.buttonForm1.Name = "buttonForm1";
             this.buttonForm1.Size = new System.Drawing.Size(154, 63);
             this.buttonForm1.TabIndex = 0;
-            this.buttonForm1.Text = "Form 1";
+            this.buttonForm1.Text = "Bài 1";
             this.buttonForm1.UseVisualStyleBackColor = false;
             this.buttonForm1.Click += new System.EventHandler(this.buttonForm1_Click);
             // 
@@ -56,7 +56,7 @@
             this.buttonForm2.Name = "buttonForm2";
             this.buttonForm2.Size = new System.Drawing.Size(154, 63);
             this.buttonForm2.TabIndex = 1;
-            this.buttonForm2.Text = "Form 2";
+            this.buttonForm2.Text = "Bài 2";
             this.buttonForm2.UseVisualStyleBackColor = false;
             this.buttonForm2.Click += new System.EventHandler(this.buttonForm2_Click);
             // 
@@ -68,7 +68,7 @@
             this.buttonForm3.Name = "buttonForm3";
             this.buttonForm3.Size = new System.Drawing.Size(154, 63);
             this.buttonForm3.TabIndex = 2;
-            this.buttonForm3.Text = "Form 3";
+            this.buttonForm3.Text = "Bài 3";
             this.buttonForm3.UseVisualStyleBackColor = false;
             this.buttonForm3.Click += new System.EventHandler(this.buttonForm3_Click);
             // 
@@ -80,7 +80,7 @@
             this.buttonForm4.Name = "buttonForm4";
             this.buttonForm4.Size = new System.Drawing.Size(154, 63);
             this.buttonForm4.TabIndex = 3;
-            this.buttonForm4.Text = "Form 4";
+            this.buttonForm4.Text = "Bài 4";
             this.buttonForm4.UseVisualStyleBackColor = false;
             this.buttonForm4.Click += new System.EventHandler(this.buttonForm4_Click);
             // 
@@ -92,7 +92,7 @@
             this.buttonForm5.Name = "buttonForm5";
             this.buttonForm5.Size = new System.Drawing.Size(154, 63);
             this.buttonForm5.TabIndex = 4;
-            this.buttonForm5.Text = "Form 5";
+            this.buttonForm5.Text = "Bài 5";
             this.buttonForm5.UseVisualStyleBackColor = false;
             this.buttonForm5.Click += new System.EventHandler(this.buttonForm5_Click);
             // 
