@@ -17,26 +17,16 @@ namespace bt
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonTim_Click(object sender, EventArgs e)
         {
             int num1, num2, num3;
-            if (Int32.TryParse(textBox1.Text, out num1) && Int32.TryParse(textBox2.Text, out num2)  && Int32.TryParse(textBox2.Text, out num2))
+            if (Int32.TryParse(inputNum1TB.Text, out num1) && Int32.TryParse(inputNum2TB.Text, out num2)  && Int32.TryParse(inputNum3TB.Text, out num3))
             {
-                num1 = Int32.Parse(textBox1.Text.Trim());
-                num2 = Int32.Parse(textBox2.Text.Trim());
-                num3 = Int32.Parse(textBox3.Text.Trim());
-                textBox4.Text = Math.Max(num1, Math.Max(num2, num3)).ToString();
-                textBox5.Text = Math.Min(num1, Math.Min(num2, num3)).ToString();
+                num1 = Int32.Parse(inputNum1TB.Text.Trim());
+                num2 = Int32.Parse(inputNum2TB.Text.Trim());
+                num3 = Int32.Parse(inputNum3TB.Text.Trim());
+                maxTB.Text = Math.Max(num1, Math.Max(num2, num3)).ToString();
+                minTB.Text = Math.Min(num1, Math.Min(num2, num3)).ToString();
             }
             else
             {
@@ -44,18 +34,18 @@ namespace bt
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonXoa_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
+            inputNum1TB.Clear();
+            inputNum2TB.Clear();
+            inputNum3TB.Clear();
+            maxTB.Clear();
+            minTB.Clear();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }
