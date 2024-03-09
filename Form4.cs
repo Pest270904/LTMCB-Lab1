@@ -35,29 +35,9 @@ namespace bt
             InitializeComponent();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void buttonThucHien_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string sBase1 = comboBox1.Text, sBase2 = comboBox2.Text;
+            string sBase1 = base1CB.Text, sBase2 = base2CB.Text;
             
             int iBase2;
             if (sBase2 == "Binary")
@@ -75,10 +55,10 @@ namespace bt
                 {
                     case "Binary":
                         {
-                            if (IsBin(textBox1.Text))
+                            if (IsBin(inputTB.Text))
                             {
-                                int inputValue_dec = Convert.ToInt32(textBox1.Text, 2);
-                                textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                                int inputValue_dec = Convert.ToInt32(inputTB.Text, 2);
+                                ansTB.Text = Convert.ToString(inputValue_dec, iBase2);
                             }
                             else
                                 MessageBox.Show("Nhập vào 1 số nhị phân");
@@ -87,10 +67,10 @@ namespace bt
                     case "Octal":
                         {
  
-                            if (IsOctal(textBox1.Text))
+                            if (IsOctal(inputTB.Text))
                             {
-                                int inputValue_dec = Convert.ToInt32(textBox1.Text, 8);
-                                textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                                int inputValue_dec = Convert.ToInt32(inputTB.Text, 8);
+                                ansTB.Text = Convert.ToString(inputValue_dec, iBase2);
                             }
                             else
                                 MessageBox.Show("Nhập vào 1 số bát phân");
@@ -99,9 +79,9 @@ namespace bt
                     case "Decimal":
                         {
                             int inputValue;
-                            if (Int32.TryParse(textBox1.Text, out inputValue))
+                            if (Int32.TryParse(inputTB.Text, out inputValue))
                             {
-                                textBox2.Text = Convert.ToString(inputValue, iBase2);
+                                ansTB.Text = Convert.ToString(inputValue, iBase2);
                             }
                             else
                                 MessageBox.Show("Nhập vào 1 số nguyên");
@@ -109,10 +89,10 @@ namespace bt
                         }
                     case "Hexadecimal":
                         {
-                            if (IsHex(textBox1.Text.ToUpper()))
+                            if (IsHex(inputTB.Text.ToUpper()))
                             {
-                                int inputValue_dec = Convert.ToInt32(textBox1.Text, 16);
-                                textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                                int inputValue_dec = Convert.ToInt32(inputTB.Text, 16);
+                                ansTB.Text = Convert.ToString(inputValue_dec, iBase2);
                             }
                             else
                                 MessageBox.Show("Nhập vào 1 số thập lục phân");
@@ -121,14 +101,17 @@ namespace bt
                 }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void buttonXoa_Click(object sender, EventArgs e)
         {
-
+            inputTB.Clear();
+            base1CB.Text = "";
+            base2CB.Text = "";
+            ansTB.Clear();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void buttonThoat_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
