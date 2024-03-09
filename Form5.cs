@@ -32,31 +32,31 @@ namespace bt
             InitializeComponent();
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void inputTB_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5")
+            if (inputTB.Text == "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5")
             {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Black;
+                inputTB.Text = "";
+                inputTB.ForeColor = Color.Black;
             }
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void inputTB_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (inputTB.Text == "")
             {
-                textBox1.Text = "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5";
-                textBox1.ForeColor = Color.LightSlateGray;
+                inputTB.Text = "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5";
+                inputTB.ForeColor = Color.LightSlateGray;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonNhap_Click(object sender, EventArgs e)
         {
-            textBox2.Clear();
-            if (isLegitInput(textBox1.Text) && String.IsNullOrEmpty(textBox1.Text)==false)
+            listScoreTB.Clear();
+            if (isLegitInput(inputTB.Text) && String.IsNullOrEmpty(inputTB.Text)==false)
             {
                 string[] seperate = { " ", ", ", "," };
-                string[] listOfScores = textBox1.Text.Split(seperate, System.StringSplitOptions.RemoveEmptyEntries);
+                string[] listOfScores = inputTB.Text.Split(seperate, System.StringSplitOptions.RemoveEmptyEntries);
                 int i = 1, pass = 0, fail = 0;
                 double avg = 0, dMin = 11, dMax = 0;
                 foreach (var score in listOfScores)
@@ -69,9 +69,9 @@ namespace bt
                     dMin = Math.Min(dMin, dScore);
                     dMax = Math.Max(dMax, dScore);
 
-                    textBox2.Text += ("Môn học " + i.ToString() + ": " + dScore.ToString() + "đ" + '\t');
+                    listScoreTB.Text += ("Môn học " + i.ToString() + ": " + dScore.ToString() + "đ" + '\t');
                     if (i % 5 == 0)
-                        textBox2.AppendText(Environment.NewLine);
+                        listScoreTB.AppendText(Environment.NewLine);
                     i++;
                 }
 
