@@ -17,34 +17,39 @@ namespace bt
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonForm1_Click(object sender, EventArgs e)
         {
             Form1 frm1 = new Form1();
             frm1.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonForm2_Click(object sender, EventArgs e)
         {
             Form2 frm2 = new Form2();
             frm2.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonForm3_Click(object sender, EventArgs e)
         {
             Form3 frm3 = new Form3();
             frm3.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonForm4_Click(object sender, EventArgs e)
         {
             Form4 frm4 = new Form4();
             frm4.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonForm5_Click(object sender, EventArgs e)
         {
             Form5 frm5 = new Form5();
             frm5.ShowDialog();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
