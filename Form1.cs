@@ -19,36 +19,21 @@ namespace bt
 
         private void clearForm()
         {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
+            inputNum2TB.Clear();
+            inputNum1TB.Clear();
+            ansTB.Clear();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonTinh_Click(object sender, EventArgs e)
         {
             int num1, num2;
             long sum = 0;
-            if (Int32.TryParse(textBox1.Text, out num1) && Int32.TryParse(textBox2.Text, out num2))
+            if (Int32.TryParse(inputNum2TB.Text, out num1) && Int32.TryParse(inputNum1TB.Text, out num2))
             {
-                num1 = Int32.Parse(textBox1.Text.Trim());
-                num2 = Int32.Parse(textBox2.Text.Trim());
+                num1 = Int32.Parse(inputNum2TB.Text.Trim());
+                num2 = Int32.Parse(inputNum1TB.Text.Trim());
                 sum = num1 + num2;
-                textBox3.Text = sum.ToString();
+                ansTB.Text = sum.ToString();
             }
             else
             {
@@ -56,19 +41,14 @@ namespace bt
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonXoa_Click(object sender, EventArgs e)
         {
             clearForm();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void buttonThoat_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            this.Close();
         }
     }
 }
