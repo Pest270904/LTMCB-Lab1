@@ -66,6 +66,8 @@
             // 
             // maxTB
             // 
+            this.maxTB.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.maxTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maxTB.Location = new System.Drawing.Point(203, 275);
             this.maxTB.Name = "maxTB";
             this.maxTB.ReadOnly = true;
@@ -74,6 +76,8 @@
             // 
             // minTB
             // 
+            this.minTB.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.minTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.minTB.Location = new System.Drawing.Point(499, 275);
             this.minTB.Name = "minTB";
             this.minTB.ReadOnly = true;

@@ -73,6 +73,8 @@
             // 
             // ansTB
             // 
+            this.ansTB.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ansTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ansTB.Location = new System.Drawing.Point(278, 248);
             this.ansTB.Name = "ansTB";
             this.ansTB.ReadOnly = true;
