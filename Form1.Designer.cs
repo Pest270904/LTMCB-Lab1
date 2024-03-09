@@ -33,9 +33,9 @@
             this.inputNum2TB = new System.Windows.Forms.TextBox();
             this.inputNum1TB = new System.Windows.Forms.TextBox();
             this.ansTB = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonXoa = new System.Windows.Forms.Button();
+            this.buttonTinh = new System.Windows.Forms.Button();
+            this.buttonThoat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -81,38 +81,38 @@
             this.ansTB.Size = new System.Drawing.Size(100, 22);
             this.ansTB.TabIndex = 4;
             // 
-            // button1
+            // buttonXoa
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(105, 144);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 37);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Xóa";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.buttonXoa_Click);
+            this.buttonXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonXoa.Location = new System.Drawing.Point(105, 144);
+            this.buttonXoa.Name = "buttonXoa";
+            this.buttonXoa.Size = new System.Drawing.Size(96, 37);
+            this.buttonXoa.TabIndex = 5;
+            this.buttonXoa.Text = "Xóa";
+            this.buttonXoa.UseVisualStyleBackColor = false;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
-            // button2
+            // buttonTinh
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Location = new System.Drawing.Point(278, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 37);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Tính";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.buttonTinh_Click);
+            this.buttonTinh.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonTinh.Location = new System.Drawing.Point(278, 144);
+            this.buttonTinh.Name = "buttonTinh";
+            this.buttonTinh.Size = new System.Drawing.Size(96, 37);
+            this.buttonTinh.TabIndex = 6;
+            this.buttonTinh.Text = "Tính";
+            this.buttonTinh.UseVisualStyleBackColor = false;
+            this.buttonTinh.Click += new System.EventHandler(this.buttonTinh_Click);
             // 
-            // button3
+            // buttonThoat
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Location = new System.Drawing.Point(454, 144);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 37);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.buttonThoat_Click);
+            this.buttonThoat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonThoat.Location = new System.Drawing.Point(454, 144);
+            this.buttonThoat.Name = "buttonThoat";
+            this.buttonThoat.Size = new System.Drawing.Size(96, 37);
+            this.buttonThoat.TabIndex = 7;
+            this.buttonThoat.Text = "Thoát";
+            this.buttonThoat.UseVisualStyleBackColor = false;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
             // label3
             // 
@@ -130,9 +130,9 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(615, 333);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonThoat);
+            this.Controls.Add(this.buttonTinh);
+            this.Controls.Add(this.buttonXoa);
             this.Controls.Add(this.ansTB);
             this.Controls.Add(this.inputNum1TB);
             this.Controls.Add(this.inputNum2TB);
@@ -152,9 +152,9 @@
         private System.Windows.Forms.TextBox inputNum2TB;
         private System.Windows.Forms.TextBox inputNum1TB;
         private System.Windows.Forms.TextBox ansTB;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonXoa;
+        private System.Windows.Forms.Button buttonTinh;
+        private System.Windows.Forms.Button buttonThoat;
         private System.Windows.Forms.Label label3;
     }
 }

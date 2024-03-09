@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.inputTB = new System.Windows.Forms.TextBox();
-            this.buttonNhap = new System.Windows.Forms.Button();
+            this.buttonXuat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listScoreTB = new System.Windows.Forms.TextBox();
             this.avgTB = new System.Windows.Forms.TextBox();
@@ -76,18 +76,18 @@
             this.inputTB.Enter += new System.EventHandler(this.inputTB_Enter);
             this.inputTB.Leave += new System.EventHandler(this.inputTB_Leave);
             // 
-            // buttonNhap
+            // buttonXuat
             // 
-            this.buttonNhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonNhap.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNhap.Location = new System.Drawing.Point(600, 127);
-            this.buttonNhap.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonNhap.Name = "buttonNhap";
-            this.buttonNhap.Size = new System.Drawing.Size(118, 56);
-            this.buttonNhap.TabIndex = 3;
-            this.buttonNhap.Text = "Xuất";
-            this.buttonNhap.UseVisualStyleBackColor = false;
-            this.buttonNhap.Click += new System.EventHandler(this.buttonNhap_Click);
+            this.buttonXuat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonXuat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXuat.Location = new System.Drawing.Point(600, 127);
+            this.buttonXuat.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonXuat.Name = "buttonXuat";
+            this.buttonXuat.Size = new System.Drawing.Size(118, 56);
+            this.buttonXuat.TabIndex = 3;
+            this.buttonXuat.Text = "Xuất";
+            this.buttonXuat.UseVisualStyleBackColor = false;
+            this.buttonXuat.Click += new System.EventHandler(this.buttonXuat_Click);
             // 
             // groupBox1
             // 
@@ -186,7 +186,7 @@
             this.Controls.Add(this.maxScoreTB);
             this.Controls.Add(this.avgTB);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.buttonNhap);
+            this.Controls.Add(this.buttonXuat);
             this.Controls.Add(this.inputTB);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inputTB;
-        private System.Windows.Forms.Button buttonNhap;
+        private System.Windows.Forms.Button buttonXuat;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox listScoreTB;
         private System.Windows.Forms.TextBox avgTB;

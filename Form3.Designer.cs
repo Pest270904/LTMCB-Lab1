@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.inputTB = new System.Windows.Forms.TextBox();
             this.ansTB = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonDoc = new System.Windows.Forms.Button();
+            this.buttonXoa = new System.Windows.Forms.Button();
+            this.buttonThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,41 +74,41 @@
             this.ansTB.Size = new System.Drawing.Size(340, 22);
             this.ansTB.TabIndex = 3;
             // 
-            // button1
+            // buttonDoc
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(439, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Đọc";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.buttonDoc_Click);
+            this.buttonDoc.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonDoc.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDoc.Location = new System.Drawing.Point(439, 43);
+            this.buttonDoc.Name = "buttonDoc";
+            this.buttonDoc.Size = new System.Drawing.Size(100, 50);
+            this.buttonDoc.TabIndex = 4;
+            this.buttonDoc.Text = "Đọc";
+            this.buttonDoc.UseVisualStyleBackColor = false;
+            this.buttonDoc.Click += new System.EventHandler(this.buttonDoc_Click);
             // 
-            // button2
+            // buttonXoa
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(439, 116);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 50);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.buttonXoa_Click);
+            this.buttonXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoa.Location = new System.Drawing.Point(439, 116);
+            this.buttonXoa.Name = "buttonXoa";
+            this.buttonXoa.Size = new System.Drawing.Size(100, 50);
+            this.buttonXoa.TabIndex = 5;
+            this.buttonXoa.Text = "Xóa";
+            this.buttonXoa.UseVisualStyleBackColor = false;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
-            // button3
+            // buttonThoat
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(439, 192);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 50);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.buttonThoat_Click);
+            this.buttonThoat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThoat.Location = new System.Drawing.Point(439, 192);
+            this.buttonThoat.Name = "buttonThoat";
+            this.buttonThoat.Size = new System.Drawing.Size(100, 50);
+            this.buttonThoat.TabIndex = 6;
+            this.buttonThoat.Text = "Thoát";
+            this.buttonThoat.UseVisualStyleBackColor = false;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
             // Form3
             // 
@@ -116,9 +116,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(676, 322);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonThoat);
+            this.Controls.Add(this.buttonXoa);
+            this.Controls.Add(this.buttonDoc);
             this.Controls.Add(this.ansTB);
             this.Controls.Add(this.inputTB);
             this.Controls.Add(this.label2);
@@ -136,8 +136,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inputTB;
         private System.Windows.Forms.TextBox ansTB;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonDoc;
+        private System.Windows.Forms.Button buttonXoa;
+        private System.Windows.Forms.Button buttonThoat;
     }
 }

@@ -19,18 +19,15 @@ namespace bt
 
         private void buttonTim_Click(object sender, EventArgs e)
         {
-            int num1, num2, num3;
-            if (Int32.TryParse(inputNum1TB.Text, out num1) && Int32.TryParse(inputNum2TB.Text, out num2)  && Int32.TryParse(inputNum3TB.Text, out num3))
+            double num1, num2, num3;
+            if (double.TryParse(inputNum1TB.Text, out num1) && double.TryParse(inputNum2TB.Text, out num2)  && double.TryParse(inputNum3TB.Text, out num3))
             {
-                num1 = Int32.Parse(inputNum1TB.Text.Trim());
-                num2 = Int32.Parse(inputNum2TB.Text.Trim());
-                num3 = Int32.Parse(inputNum3TB.Text.Trim());
                 maxTB.Text = Math.Max(num1, Math.Max(num2, num3)).ToString();
                 minTB.Text = Math.Min(num1, Math.Min(num2, num3)).ToString();
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập vào 3 số nguyên!!");
+                MessageBox.Show("Vui lòng nhập vào 3 số.");
             }
         }
 

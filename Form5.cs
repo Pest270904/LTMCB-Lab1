@@ -11,8 +11,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace bt
 {
+
     public partial class Form5 : Form
     {
+        public static string placeHolder = "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5";
         private static bool isLegitInput(string text)
         {
             bool check1 = text.All("0123456789,. ".Contains);
@@ -30,11 +32,13 @@ namespace bt
         public Form5()
         {
             InitializeComponent();
+            inputTB.Text = placeHolder;
+            inputTB.ForeColor = Color.LightSlateGray;
         }
 
         private void inputTB_Enter(object sender, EventArgs e)
         {
-            if (inputTB.Text == "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5")
+            if (inputTB.Text == placeHolder)
             {
                 inputTB.Text = "";
                 inputTB.ForeColor = Color.Black;
@@ -45,15 +49,22 @@ namespace bt
         {
             if (inputTB.Text == "")
             {
-                inputTB.Text = "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5";
+                inputTB.Text = placeHolder;
                 inputTB.ForeColor = Color.LightSlateGray;
             }
         }
 
-        private void buttonNhap_Click(object sender, EventArgs e)
+        private void buttonXuat_Click(object sender, EventArgs e)
         {
             listScoreTB.Clear();
-            if (isLegitInput(inputTB.Text) && String.IsNullOrEmpty(inputTB.Text)==false)
+            avgTB.Clear();
+            maxScoreTB.Clear();
+            minScoreTB.Clear();
+            passTB.Clear();
+            failTB.Clear();
+            finalTB.Clear();
+
+            if (inputTB.Text != placeHolder && isLegitInput(inputTB.Text) && String.IsNullOrEmpty(inputTB.Text)==false)
             {
                 string[] seperate = { " ", ", ", "," };
                 string[] listOfScores = inputTB.Text.Split(seperate, System.StringSplitOptions.RemoveEmptyEntries);

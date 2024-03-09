@@ -27,12 +27,9 @@ namespace bt
         private void buttonTinh_Click(object sender, EventArgs e)
         {
             int num1, num2;
-            long sum = 0;
             if (Int32.TryParse(inputNum2TB.Text, out num1) && Int32.TryParse(inputNum1TB.Text, out num2))
             {
-                num1 = Int32.Parse(inputNum2TB.Text.Trim());
-                num2 = Int32.Parse(inputNum1TB.Text.Trim());
-                sum = num1 + num2;
+                long sum = num1 + num2;
                 ansTB.Text = sum.ToString();
             }
             else

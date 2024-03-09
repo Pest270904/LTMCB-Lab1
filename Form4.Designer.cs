@@ -152,7 +152,7 @@
             // buttonXoa
             // 
             this.buttonXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonXoa.Location = new System.Drawing.Point(209, 299);
+            this.buttonXoa.Location = new System.Drawing.Point(229, 298);
             this.buttonXoa.Name = "buttonXoa";
             this.buttonXoa.Size = new System.Drawing.Size(104, 45);
             this.buttonXoa.TabIndex = 14;
@@ -163,7 +163,7 @@
             // buttonThoat
             // 
             this.buttonThoat.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonThoat.Location = new System.Drawing.Point(362, 299);
+            this.buttonThoat.Location = new System.Drawing.Point(382, 298);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(104, 45);
             this.buttonThoat.TabIndex = 15;
