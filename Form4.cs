@@ -69,56 +69,56 @@ namespace bt
             else iBase2 = 16;
 
             if (string.IsNullOrEmpty(sBase1) || string.IsNullOrEmpty(sBase2))
-                MessageBox.Show("Vui lòng chọn 2 kiểu chuyển đổi");
-
-            switch (sBase1)
-            {
-                case "Binary":
-                    {
-                        if (IsBin(textBox1.Text))
+                MessageBox.Show("Vui lòng chọn 2 kiểu chuyển đổi");         
+            else
+                switch (sBase1)
+                {
+                    case "Binary":
                         {
-                            int inputValue_dec = Convert.ToInt32(textBox1.Text, 2);
-                            textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                            if (IsBin(textBox1.Text))
+                            {
+                                int inputValue_dec = Convert.ToInt32(textBox1.Text, 2);
+                                textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                            }
+                            else
+                                MessageBox.Show("Nhập vào 1 số nhị phân");
+                            break;
                         }
-                        else
-                            MessageBox.Show("Nhập vào 1 số nhị phân");
-                        break;
-                    }
-                case "Octal":
-                    {
+                    case "Octal":
+                        {
  
-                        if (IsOctal(textBox1.Text))
-                        {
-                            int inputValue_dec = Convert.ToInt32(textBox1.Text, 8);
-                            textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                            if (IsOctal(textBox1.Text))
+                            {
+                                int inputValue_dec = Convert.ToInt32(textBox1.Text, 8);
+                                textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                            }
+                            else
+                                MessageBox.Show("Nhập vào 1 số bát phân");
+                            break;
                         }
-                        else
-                            MessageBox.Show("Nhập vào 1 số bát phân");
-                        break;
-                    }
-                case "Decimal":
-                    {
-                        int inputValue;
-                        if (Int32.TryParse(textBox1.Text, out inputValue))
+                    case "Decimal":
                         {
-                            textBox2.Text = Convert.ToString(inputValue, iBase2);
+                            int inputValue;
+                            if (Int32.TryParse(textBox1.Text, out inputValue))
+                            {
+                                textBox2.Text = Convert.ToString(inputValue, iBase2);
+                            }
+                            else
+                                MessageBox.Show("Nhập vào 1 số nguyên");
+                            break;
                         }
-                        else
-                            MessageBox.Show("Nhập vào 1 số nguyên");
-                        break;
-                    }
-                case "Hexadecimal":
-                    {
-                        if (IsHex(textBox1.Text.ToUpper()))
+                    case "Hexadecimal":
                         {
-                            int inputValue_dec = Convert.ToInt32(textBox1.Text, 16);
-                            textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                            if (IsHex(textBox1.Text.ToUpper()))
+                            {
+                                int inputValue_dec = Convert.ToInt32(textBox1.Text, 16);
+                                textBox2.Text = Convert.ToString(inputValue_dec, iBase2);
+                            }
+                            else
+                                MessageBox.Show("Nhập vào 1 số thập lục phân");
+                            break;
                         }
-                        else
-                            MessageBox.Show("Nhập vào 1 số thập lục phân");
-                        break;
-                    }
-            }
+                }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
