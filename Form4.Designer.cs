@@ -49,7 +49,7 @@
             "Octal",
             "Decimal",
             "Hexadecimal"});
-            this.comboBox2.Location = new System.Drawing.Point(149, 84);
+            this.comboBox2.Location = new System.Drawing.Point(433, 84);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(174, 24);
             this.comboBox2.TabIndex = 1;
@@ -118,7 +118,7 @@
             "Octal",
             "Decimal",
             "Hexadecimal"});
-            this.comboBox1.Location = new System.Drawing.Point(433, 85);
+            this.comboBox1.Location = new System.Drawing.Point(149, 84);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(174, 24);
             this.comboBox1.TabIndex = 10;
