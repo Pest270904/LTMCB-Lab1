@@ -20,7 +20,8 @@ namespace bt
                     "\n- Each one is separated by a space or comma.";
         private static bool isLegitInput(string text)
         {
-            //bool check1 = text.All("0123456789,. ".Contains);
+            if (!text.All("0123456789,. ".Contains))
+                return false;
             string[] seperate = { " ", ", ", "," };
             string[] arr = text.Split(seperate, System.StringSplitOptions.RemoveEmptyEntries);
             foreach (var each in arr)
