@@ -16,7 +16,7 @@ namespace bt
     {
         public static string placeHolder = "Enter a list of scores, can only be seperated by a space or comma     Ex: 5.75 3 5";
         public static string errorMsg = "- Please re-enter your list of scores that only contain non-negative numbers " +
-                    "which is <= 10 and not having more than 2 floating digits" +
+                    "which is <= 10." +
                     "\n- Each one is separated by a space or comma.";
         private static bool isLegitInput(string text)
         {
@@ -25,7 +25,7 @@ namespace bt
             string[] seperate = { " ", ", ", "," };
             string[] arr = text.Split(seperate, System.StringSplitOptions.RemoveEmptyEntries);
             foreach (var each in arr)
-                if (Convert.ToDouble(each) > 10 || (Convert.ToDouble(each) == 10 ? each.Length > 5 : each.Length > 4))
+                if (Convert.ToDouble(each) > 10)
                     return false;
             return true;
         }
@@ -73,7 +73,7 @@ namespace bt
                     double avg = 0, dMin = 11, dMax = 0;
                     foreach (var score in listOfScores)
                     {
-                        double dScore = Convert.ToDouble(score);
+                        double dScore = (double)System.Math.Round(Convert.ToDouble(score),2);
                         if (dScore < 5)
                             fail++;
                         else pass++;

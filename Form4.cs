@@ -55,7 +55,7 @@ namespace bt
                 {
                     case "Binary":
                         {
-                            if (IsBin(inputTB.Text))
+                            if (IsBin(inputTB.Text) && !String.IsNullOrEmpty(inputTB.Text))
                             {
                                 int inputValue_dec = Convert.ToInt32(inputTB.Text, 2);
                                 ansTB.Text = Convert.ToString(inputValue_dec, iBase2);
@@ -67,7 +67,7 @@ namespace bt
                     case "Octal":
                         {
  
-                            if (IsOctal(inputTB.Text))
+                            if (IsOctal(inputTB.Text) && !String.IsNullOrEmpty(inputTB.Text))
                             {
                                 int inputValue_dec = Convert.ToInt32(inputTB.Text, 8);
                                 ansTB.Text = Convert.ToString(inputValue_dec, iBase2);
@@ -89,7 +89,7 @@ namespace bt
                         }
                     case "Hexadecimal":
                         {
-                            if (IsHex(inputTB.Text.ToUpper()))
+                            if (IsHex(inputTB.Text.ToUpper()) && !String.IsNullOrEmpty(inputTB.Text))
                             {
                                 int inputValue_dec = Convert.ToInt32(inputTB.Text, 16);
                                 ansTB.Text = Convert.ToString(inputValue_dec, iBase2);
