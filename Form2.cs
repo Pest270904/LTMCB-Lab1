@@ -19,7 +19,11 @@ namespace bt
 
         private void buttonTim_Click(object sender, EventArgs e)
         {
+
             double num1, num2, num3;
+            inputNum1TB.Text=inputNum1TB.Text.Replace(',', '.');
+            inputNum2TB.Text=inputNum2TB.Text.Replace(',', '.');
+            inputNum3TB.Text=inputNum3TB.Text.Replace(',', '.');
             if (double.TryParse(inputNum1TB.Text, out num1) && double.TryParse(inputNum2TB.Text, out num2)  && double.TryParse(inputNum3TB.Text, out num3))
             {
                 maxTB.Text = Math.Max(num1, Math.Max(num2, num3)).ToString();
